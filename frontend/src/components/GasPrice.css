@@ -1,0 +1,45 @@
+.column {
+    border-radius: 50px;
+    float: left;
+    width: 270px;
+    height: 120px;
+    margin-right: 10px;
+    /* display: flex; */
+    padding-left: 40px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column {
+    float: left;
+  }
+  
+  .left, .right {
+    width: 25%;
+  }
+  
+  .middle {
+    width: 50%;
+  }
+
+  .GasPrice {
+      margin-top: 15%;
+      margin-left: 17%;
+      margin-right: 15%;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
